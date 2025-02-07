@@ -1,0 +1,86 @@
+*{
+    margin: auto;
+    padding: 0 ;
+    font-family: 'Segoe UI';
+}
+body{
+    background-color: #068dcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.wrapper{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px white;
+}
+.wrapper h1{
+    font-variant: normal;
+    text-align: center;
+    font-weight:light;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px;
+    background-color: lightgrey;
+}
+.wrapper .Signup{
+    text-align: center;
+    size: 20px;
+    font-size: 15px;
+    padding: 0%;
+    border: solid rgb(62, 133, 214);
+    border-radius: 10px;
+    text-decoration: none;
+    background: transparent;
+    background-color: rgb(62, 133, 214);
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    text-align: left;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    padding: 0px 45px 0px 0px;
+}
+
+.wrapper .fb{
+    text-align: center;
+    size: 20px;
+    font-size: 15px;
+    padding: 0%;    
+    border: solid rgb(62, 133, 214);
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(62, 133, 214);
+    text-decoration: none;
+}
+.wrapper .google{
+    text-align: center;
+    size: 20px;
+    font-size: 15px;
+    padding: 0%;
+    border: solid lightgray;
+    border-radius: 10px;
+    text-decoration: none;
+    background: transparent;
+    background-color: lightgray;
+}
+
+.wrapper .or{
+    justify-content: center;
+    margin: 10px;
+}
