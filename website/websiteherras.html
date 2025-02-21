@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        #home {
+            background: linear-gradient(to bottom, #0099ff 30%, #009900 100%);
+        }
+        #about {
+            background: linear-gradient(to bottom, #009900 0%, #cc6600 30%);
+            padding: 50px 0;
+        }
+        #contact {
+            background: linear-gradient(to bottom, #cc6600 0%, #663300 88%);
+        }
+        img{
+            max-width: 25%;
+            max-height: 25%;
+            padding: 10pt;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">   Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home" class="parallax">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Welcome to My Website</h1>
+                <div class="home-image">
+                    <img src="tan.jpg" alt="Sample Image">
+                </div>  
+                <p>I am Nataniel Herras. Currently a 3rd-year BSIT Student at CSTA</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="text-center">
+        <div>
+            <h2>About Me</h2>
+        </div>
+        <div><h4>these are some of my most memorable periods in my life
+        </h4></div>
+        <div id="carouselEx" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100">
+                        <div><img src="covid.jpg"> </div>
+                        <h3>The Covid-19 Pandemic</h3>
+                        <p>A very unpleasant period. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <img src="tagkawayan.jpg" alt="">
+                        <h3> Tagkawayan</h3>
+                        <p>There is a vantage point where you can see the ocean near my relatives' house in the province. 
+                            <br> Every morning, I always ran up there to see the breathtaking view of the ocean.  
+                        </p>
+                    </div>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEx" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEx" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+    
+    <section id="contact" class="parallax">
+        <div class="container text-white">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Contact Number" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
